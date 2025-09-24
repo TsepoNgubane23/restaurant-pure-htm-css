@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservations - Zungu Restaurant</title>
+    <link rel="icon" href="images/download.jpeg" type="image/jpeg">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h1>Zungu</h1>
+                <span class="logo-tagline">Authentic South African Cuisine</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="menu.html" class="nav-link">Menu</a></li>
+                <li><a href="reservations.html" class="nav-link active">Reservations</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Reservations Section -->
+    <section class="section reservations-section" style="padding-top: 120px;">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Make a Reservation</h2>
+                <p class="section-subtitle">Book your table for an authentic South African dining experience</p>
+            </div>
+
+            <div class="reservations-content">
+                <div class="reservation-form-container">
+                    <form class="reservation-form" id="reservationForm">
+                        <h3 style="color: #2c1810; margin-bottom: 2rem; text-align: center;">Reserve Your Table</h3>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="firstName">First Name *</label>
+                                <input type="text" id="firstName" name="firstName" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="lastName">Last Name *</label>
+                                <input type="text" id="lastName" name="lastName" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="email">Email Address *</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Phone Number *</label>
+                                <input type="tel" id="phone" name="phone" placeholder="+27 XX XXX XXXX" required>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="date">Preferred Date *</label>
+                                <input type="date" id="date" name="date" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="time">Preferred Time *</label>
+                                <select id="time" name="time" required>
+                                    <option value="">Select Time</option>
+                                    <option value="11:00">11:00 AM</option>
+                                    <option value="11:30">11:30 AM</option>
+                                    <option value="12:00">12:00 PM</option>
+                                    <option value="12:30">12:30 PM</option>
+                                    <option value="13:00">1:00 PM</option>
+                                    <option value="13:30">1:30 PM</option>
+                                    <option value="14:00">2:00 PM</option>
+                                    <option value="18:00">6:00 PM</option>
+                                    <option value="18:30">6:30 PM</option>
+                                    <option value="19:00">7:00 PM</option>
+                                    <option value="19:30">7:30 PM</option>
+                                    <option value="20:00">8:00 PM</option>
+                                    <option value="20:30">8:30 PM</option>
+                                    <option value="21:00">9:00 PM</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="guests">Number of Guests *</label>
+                                <select id="guests" name="guests" required>
+                                    <option value="">Select Guests</option>
+                                    <option value="1">1 Guest</option>
+                                    <option value="2">2 Guests</option>
+                                    <option value="3">3 Guests</option>
+                                    <option value="4">4 Guests</option>
+                                    <option value="5">5 Guests</option>
+                                    <option value="6">6 Guests</option>
+                                    <option value="7">7 Guests</option>
+                                    <option value="8">8 Guests</option>
+                                    <option value="9">9 Guests</option>
+                                    <option value="10">10 Guests</option>
+                                    <option value="11">11 Guests</option>
+                                    <option value="12">12 Guests</option>
+                                    <option value="13+">13+ Guests (Call Us)</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="occasion">Special Occasion</label>
+                                <select id="occasion" name="occasion">
+                                    <option value="">Select Occasion</option>
+                                    <option value="birthday">Birthday Celebration</option>
+                                    <option value="anniversary">Anniversary</option>
+                                    <option value="business">Business Meeting</option>
+                                    <option value="romantic">Romantic Dinner</option>
+                                    <option value="family">Family Gathering</option>
+                                    <option value="celebration">General Celebration</option>
+                                    <option value="tourist">Tourist Visit</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="seating">Seating Preference</label>
+                            <select id="seating" name="seating">
+                                <option value="">No Preference</option>
+                                <option value="indoor">Indoor Dining</option>
+                                <option value="outdoor">Outdoor Terrace</option>
+                                <option value="private">Private Dining Room</option>
+                                <option value="bar">Bar Area</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="requests">Special Requests & Dietary Requirements</label>
+                            <textarea id="requests" name="requests" rows="4" placeholder="Please let us know about any dietary restrictions, allergies, accessibility needs, or special requests for your celebration..."></textarea>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" id="newsletter" name="newsletter">
+                                <span class="checkmark"></span>
+                                Subscribe to our newsletter for special offers and events
+                            </label>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-full">Reserve Table</button>
+                        
+                        <p style="text-align: center; color: #666; font-size: 0.9rem; margin-top: 1rem;">
+                            * Required fields. We'll confirm your reservation within 2 hours.
+                        </p>
+                    </form>
+                </div>
+
+                <div class="reservation-info">
+                    <div class="info-card">
+                        <div class="info-icon"><i class="fas fa-clock"></i></div>
+                        <h3>Operating Hours</h3>
+                        <div class="hours-list">
+                            <div class="hours-item">
+                                <span>Monday - Thursday</span>
+                                <span>11:00 AM - 10:00 PM</span>
+                            </div>
+                            <div class="hours-item">
+                                <span>Friday - Saturday</span>
+                                <span>11:00 AM - 11:00 PM</span>
+                            </div>
+                            <div class="hours-item">
+                                <span>Sunday</span>
+                                <span>11:00 AM - 9:00 PM</span>
+                            </div>
+                        </div>
+                        <p style="color: #666; font-size: 0.9rem; margin-top: 1rem;">
+                            Kitchen closes 30 minutes before restaurant closing time.
+                        </p>
+                    </div>
+
+                    <div class="info-card">
+                        <div class="info-icon"><i class="fas fa-info-circle"></i></div>
+                        <h3>Reservation Policy</h3>
+                        <ul class="policy-list">
+                            <li>Reservations recommended, especially weekends</li>
+                            <li>24-hour cancellation policy</li>
+                            <li>Smart casual dress code</li>
+                            <li>Maximum party size of 20 guests</li>
+                            <li>Children welcome with high chairs available</li>
+                            <li>Special dietary requirements accommodated</li>
+                            <li>Private dining room available for groups 15+</li>
+                        </ul>
+                    </div>
+
+                    <div class="info-card">
+                        <div class="info-icon"><i class="fas fa-phone"></i></div>
+                        <h3>Contact Information</h3>
+                        <div class="contact-details">
+                            <p><strong>Phone:</strong> +27 31 312 4567</p>
+                            <p><strong>WhatsApp:</strong> +27 82 555 1234</p>
+                            <p><strong>Email:</strong> reservations@zungurestaurant.co.za</p>
+                            <p><strong>Address:</strong> 123 Florida Road<br>Morningside, Durban 4001</p>
+                        </div>
+                        <div style="margin-top: 1rem;">
+                            <a href="contact.html" class="btn btn-secondary" style="width: 100%; text-align: center;">Get Directions</a>
+                        </div>
+                    </div>
+
+                    <div class="info-card">
+                        <div class="info-icon"><i class="fas fa-gift"></i></div>
+                        <h3>Special Packages</h3>
+                        <div style="color: #666; line-height: 1.6;">
+                            <p><strong>Birthday Package:</strong> Complimentary dessert and traditional song</p>
+                            <p><strong>Anniversary Special:</strong> Bottle of South African wine included</p>
+                            <p><strong>Tourist Experience:</strong> Cultural dining with traditional entertainment</p>
+                            <p><strong>Corporate Events:</strong> Private dining with presentation facilities</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Additional Information Section -->
+            <div style="background: #f8f8f8; padding: 3rem; border-radius: 15px; margin-top: 4rem;">
+                <div class="container">
+                    <h3 style="color: #d4af37; text-align: center; margin-bottom: 2rem;">Planning a Special Event?</h3>
+                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem;">
+                        <div style="text-align: center;">
+                            <i class="fas fa-users" style="font-size: 2rem; color: #d4af37; margin-bottom: 1rem;"></i>
+                            <h4 style="color: #2c1810; margin-bottom: 0.5rem;">Group Bookings</h4>
+                            <p style="color: #666;">Perfect for family reunions, corporate events, and celebrations. Groups of 15+ get access to our private dining room.</p>
+                        </div>
+                        <div style="text-align: center;">
+                            <i class="fas fa-music" style="font-size: 2rem; color: #d4af37; margin-bottom: 1rem;"></i>
+                            <h4 style="color: #2c1810; margin-bottom: 0.5rem;">Cultural Entertainment</h4>
+                            <p style="color: #666;">Traditional Zulu performances available for special occasions. Experience authentic South African culture with your meal.</p>
+                        </div>
+                        <div style="text-align: center;">
+                            <i class="fas fa-utensils" style="font-size: 2rem; color: #d4af37; margin-bottom: 1rem;"></i>
+                            <h4 style="color: #2c1810; margin-bottom: 0.5rem;">Custom Menus</h4>
+                            <p style="color: #666;">Our chef can create custom menus for your event, incorporating your favorite South African dishes and dietary requirements.</p>
+                        </div>
+                    </div>
+                    <div style="text-align: center; margin-top: 2rem;">
+                        <a href="contact.html" class="btn btn-primary">Contact Us for Events</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <h3>Zungu</h3>
+                        <p>Authentic South African Cuisine</p>
+                    </div>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p><i class="fas fa-map-marker-alt"></i> 123 Florida Road<br>Morningside, Durban 4001</p>
+                    <p><i class="fas fa-phone"></i> +27 31 312 4567</p>
+                    <p><i class="fas fa-envelope"></i> info@zungurestaurant.co.za</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Hours</h4>
+                    <p>Monday - Thursday: 11:00 AM - 10:00 PM</p>
+                    <p>Friday - Saturday: 11:00 AM - 11:00 PM</p>
+                    <p>Sunday: 11:00 AM - 9:00 PM</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Newsletter</h4>
+                    <p>Subscribe for exclusive offers and updates</p>
+                    <div class="newsletter-form">
+                        <input type="email" placeholder="Enter your email" class="newsletter-input">
+                        <button type="submit" class="newsletter-btn">Subscribe</button>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 Zungu Restaurant. All rights reserved. | Privacy Policy | Terms of Service</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

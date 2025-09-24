@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu - Zungu Restaurant</title>
+    <link rel="icon" href="images/download.jpeg" type="image/jpeg">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h1>Zungu</h1>
+                <span class="logo-tagline">Authentic South African Cuisine</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="menu.html" class="nav-link active">Menu</a></li>
+                <li><a href="reservations.html" class="nav-link">Reservations</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Menu Section -->
+    <section class="section menu-section" style="padding-top: 120px;">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Our Traditional Menu</h2>
+                <p class="section-subtitle">Authentic South African dishes crafted with love and tradition</p>
+            </div>
+
+            <div class="menu-categories">
+                <div class="menu-nav">
+                    <button class="menu-nav-btn active" data-category="traditional">Traditional Dishes</button>
+                    <button class="menu-nav-btn" data-category="braai">Braai Specialties</button>
+                    <button class="menu-nav-btn" data-category="seafood">Durban Seafood</button>
+                    <button class="menu-nav-btn" data-category="desserts">Desserts</button>
+                    <button class="menu-nav-btn" data-category="beverages">Beverages</button>
+                </div>
+
+                <!-- Traditional Dishes -->
+                <div class="menu-category active" id="traditional">
+                    <div class="menu-items">
+                        <div class="menu-item">
+                            <div class="menu-item-image">
+                                <div class="menu-item-placeholder"><i class="fas fa-utensils"></i></div>
+                            </div>
+                            <div class="menu-item-content">
+                                <div class="menu-item-header">
+                                    <h3>Traditional Bobotie</h3>
+                                    <span class="menu-item-price">R185</span>
+                                </div>
+                                <p class="menu-item-description">Spiced mince meat baked with egg custard topping, served with yellow rice, sambals, and chutney</p>
+                                <div class="menu-item-tags">
+                                    <span class="tag">Traditional</span>
+                                    <span class="tag">Signature</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-image">
+                                <div class="menu-item-placeholder"><i class="fas fa-pepper-hot"></i></div>
+                            </div>
+                            <div class="menu-item-content">
+                                <div class="menu-item-header">
+                                    <h3>Durban Curry</h3>
+                                    <span class="menu-item-price">R165</span>
+                                </div>
+                                <p class="menu-item-description">Authentic Durban-style curry with your choice of chicken, lamb, or vegetables, served with basmati rice and roti</p>
+                                <div class="menu-item-tags">
+                                    <span class="tag">Spicy</span>
+                                    <span class="tag">Local Favorite</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-image">
+                                <div class="menu-item-placeholder"><i class="fas fa-drumstick-bite"></i></div>
+                            </div>
+                            <div class="menu-item-content">
+                                <div class="menu-item-header">
+                                    <h3>Potjiekos</h3>
+                                    <span class="menu-item-price">R195</span>
+                                </div>
+                                <p class="menu-item-description">Slow-cooked stew in a traditional cast-iron pot with tender meat, vegetables, and aromatic spices</p>
+                                <div class="menu-item-tags">
+                                    <span class="tag">Slow-cooked</span>
+                                    <span class="tag">Traditional</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-image">
+                                <div class="menu-item-placeholder"><i class="fas fa-bread-slice"></i></div>
+                            </div>
+                            <div class="menu-item-content">
+                                <div class="menu-item-header">
+                                    <h3>Bunny Chow</h3>
+                                    <span class="menu-item-price">R125</span>
+                                </div>
+                                <p class="menu-item-description">Durban's famous curry served in a hollowed-out loaf of bread - a true street food classic</p>
+                                <div class="menu-item-tags">
+                                    <span class="tag">Street Food</span>
+                                    <span class="tag">Durban Special</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-image">
+                                <div class="menu-item-placeholder"><i class="fas fa-leaf"></i></div>
+                            </div>
+                            <div class="menu-item-content">
+                                <div class="menu-item-header">
+                                    <h3>Morogo & Pap</h3>
+                                    <span class="menu-item-price">R95</span>
+                                </div>
+                                <p class="menu-item-description">Traditional wild spinach served with creamy maize porridge and a choice of meat or vegetarian gravy</p>
+                                <div class="menu-item-tags">
+                                    <span class="tag">Vegetarian Option</span>
+                                    <span class="tag">Healthy</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Braai Specialties -->
+                <div class="menu-category" id="braai">
+                    <div class="menu-items">
+                        <div class="menu-item">
+                            <div class="menu-item-image">
+                                <div class="menu-item-placeholder"><i class="fas fa-fire"></i></div>
+                            </div>
+                            <div class="menu-item-content">
+                                <div class="menu-item-header">
+                                    <h3>Boerewors Platter</h3>
+                                    <span class="menu-item-price">R225</span>
+                                </div>
+                                <p class="menu-item-description">Traditional farmer's sausage grilled over open coals, served with pap, chakalaka, and morogo</p>
+                                <div class="menu-item-tags">
+                                    <span class="tag">Braai</span>
+                                    <span class="tag">Traditional</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-image">
+                                <div class="menu-item-placeholder"><i class="fas fa-drumstick-bite"></i></div>
+                            </div>
+                            <div class="menu-item-content">
+                                <div class="menu-item-header">
+                                    <h3>Sosaties</h3>
+                                    <span class="menu-item-price">R185</span>
+                                </div>
+                                <p class="menu-item-description">Marinated lamb and apricot kebabs grilled to perfection, served with yellow rice and sambals</p>
+                                <div class="menu-item-tags">
+                                    <span class="tag">Grilled</span>
+                                    <span class="tag">Sweet & Savory</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-image">
+                                <div class="menu-item-placeholder"><i class="fas fa-cow"></i></div>
+                            </div>
+                            <div class="menu-item-content">
+                                <div class="menu-item-header">
+                                    <h3>Karoo Lamb Chops</h3>
+                                    <span class="menu-item-price">R285</span>
+                                </div>
+                                <p class="menu-item-description">Premium Karoo lamb chops seasoned with traditional herbs and grilled over wood coals</p>
+                                <div class="menu-item-tags">
+                                    <span class="tag">Premium</span>
+                                    <span class="tag">Wood-fired</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Durban Seafood -->
+                <div class="menu-category" id="seafood">
+                    <div class="menu-items">
+                        <div class="menu-item">
+                            <div class="menu-item-image">
+                                <div class="menu-item-placeholder"><i class="fas fa-fish"></i></div>
+                            </div>
+                            <div class="menu-item-content">
+                                <div class="menu-item-header">
+                                    <h3>Durban Fish Curry</h3>
+                                    <span class="menu-item-price">R195</span>
+                                </div>
+                                <p class="menu-item-description">Fresh line fish in aromatic Durban curry sauce, served with basmati rice and dhania chutney</p>
+                                <div class="menu-item-tags">
+                                    <span class="tag">Fresh</span>
+                                    <span class="tag">Coastal</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-image">
+                                <div class="menu-item-placeholder"><i class="fas fa-shrimp"></i></div>
+                            </div>
+                            <div class="menu-item-content">
+                                <div class="menu-item-header">
+                                    <h3>Prawns Peri-Peri</h3>
+                                    <span class="menu-item-price">R245</span>
+                                </div>
+                                <p class="menu-item-description">Mozambican-style prawns in spicy peri-peri sauce, served with Portuguese rolls</p>
+                                <div class="menu-item-tags">
+                                    <span class="tag">Spicy</span>
+                                    <span class="tag">Mozambican Style</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Desserts -->
+                <div class="menu-category" id="desserts">
+                    <div class="menu-items">
+                        <div class="menu-item">
+                            <div class="menu-item-image">
+                                <div class="menu-item-placeholder"><i class="fas fa-birthday-cake"></i></div>
+                            </div>
+                            <div class="menu-item-content">
+                                <div class="menu-item-header">
+                                    <h3>Malva Pudding</h3>
+                                    <span class="menu-item-price">R85</span>
+                                </div>
+                                <p class="menu-item-description">Traditional South African sponge pudding with apricot jam, served warm with custard or ice cream</p>
+                                <div class="menu-item-tags">
+                                    <span class="tag">Traditional</span>
+                                    <span class="tag">Warm</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-image">
+                                <div class="menu-item-placeholder"><i class="fas fa-cookie-bite"></i></div>
+                            </div>
+                            <div class="menu-item-content">
+                                <div class="menu-item-header">
+                                    <h3>Koeksisters</h3>
+                                    <span class="menu-item-price">R65</span>
+                                </div>
+                                <p class="menu-item-description">Traditional braided doughnuts soaked in syrup, served with vanilla ice cream</p>
+                                <div class="menu-item-tags">
+                                    <span class="tag">Sweet</span>
+                                    <span class="tag">Traditional</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-image">
+                                <div class="menu-item-placeholder"><i class="fas fa-apple-alt"></i></div>
+                            </div>
+                            <div class="menu-item-content">
+                                <div class="menu-item-header">
+                                    <h3>Milk Tart</h3>
+                                    <span class="menu-item-price">R75</span>
+                                </div>
+                                <p class="menu-item-description">Creamy custard tart with cinnamon, a beloved South African classic</p>
+                                <div class="menu-item-tags">
+                                    <span class="tag">Classic</span>
+                                    <span class="tag">Creamy</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Beverages -->
+                <div class="menu-category" id="beverages">
+                    <div class="menu-items">
+                        <div class="menu-item">
+                            <div class="menu-item-image">
+                                <div class="menu-item-placeholder"><i class="fas fa-wine-bottle"></i></div>
+                            </div>
+                            <div class="menu-item-content">
+                                <div class="menu-item-header">
+                                    <h3>South African Wine Selection</h3>
+                                    <span class="menu-item-price">R45-R350</span>
+                                </div>
+                                <p class="menu-item-description">Curated selection from Stellenbosch, Franschhoek, and local KwaZulu-Natal vineyards</p>
+                                <div class="menu-item-tags">
+                                    <span class="tag">Local</span>
+                                    <span class="tag">Premium</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-image">
+                                <div class="menu-item-placeholder"><i class="fas fa-beer"></i></div>
+                            </div>
+                            <div class="menu-item-content">
+                                <div class="menu-item-header">
+                                    <h3>Castle Lager & Craft Beers</h3>
+                                    <span class="menu-item-price">R35-R65</span>
+                                </div>
+                                <p class="menu-item-description">South African favorites including Castle, Black Label, and local Durban craft beers</p>
+                                <div class="menu-item-tags">
+                                    <span class="tag">Local Brews</span>
+                                    <span class="tag">Craft</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-image">
+                                <div class="menu-item-placeholder"><i class="fas fa-cocktail"></i></div>
+                            </div>
+                            <div class="menu-item-content">
+                                <div class="menu-item-header">
+                                    <h3>Rooibos Cocktails</h3>
+                                    <span class="menu-item-price">R85-R125</span>
+                                </div>
+                                <p class="menu-item-description">Unique cocktails featuring South African rooibos tea and local botanicals</p>
+                                <div class="menu-item-tags">
+                                    <span class="tag">Signature</span>
+                                    <span class="tag">Rooibos</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-image">
+                                <div class="menu-item-placeholder"><i class="fas fa-mug-hot"></i></div>
+                            </div>
+                            <div class="menu-item-content">
+                                <div class="menu-item-header">
+                                    <h3>Traditional Beverages</h3>
+                                    <span class="menu-item-price">R25-R45</span>
+                                </div>
+                                <p class="menu-item-description">Rooibos tea, honeybush tea, mageu (fermented maize drink), and fresh fruit juices</p>
+                                <div class="menu-item-tags">
+                                    <span class="tag">Traditional</span>
+                                    <span class="tag">Healthy</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Special Menu Note -->
+            <div class="menu-note" style="background: #f8f8f8; padding: 2rem; border-radius: 15px; margin-top: 3rem; text-align: center;">
+                <h3 style="color: #d4af37; margin-bottom: 1rem;">Chef's Special</h3>
+                <p style="color: #666; font-size: 1.1rem; line-height: 1.6;">
+                    Our menu changes seasonally to incorporate the freshest local ingredients. 
+                    Ask your server about today's special dishes featuring seasonal produce from KwaZulu-Natal farms.
+                </p>
+                <p style="color: #2c1810; font-weight: 600; margin-top: 1rem;">
+                    All dishes can be prepared to accommodate dietary restrictions. Please inform us of any allergies.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <h3>Zungu</h3>
+                        <p>Authentic South African Cuisine</p>
+                    </div>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p><i class="fas fa-map-marker-alt"></i> 123 Florida Road<br>Morningside, Durban 4001</p>
+                    <p><i class="fas fa-phone"></i> +27 31 312 4567</p>
+                    <p><i class="fas fa-envelope"></i> info@zungurestaurant.co.za</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Hours</h4>
+                    <p>Monday - Thursday: 11:00 AM - 10:00 PM</p>
+                    <p>Friday - Saturday: 11:00 AM - 11:00 PM</p>
+                    <p>Sunday: 11:00 AM - 9:00 PM</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Newsletter</h4>
+                    <p>Subscribe for exclusive offers and updates</p>
+                    <div class="newsletter-form">
+                        <input type="email" placeholder="Enter your email" class="newsletter-input">
+                        <button type="submit" class="newsletter-btn">Subscribe</button>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 Zungu Restaurant. All rights reserved. | Privacy Policy | Terms of Service</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

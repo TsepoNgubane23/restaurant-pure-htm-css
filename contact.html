@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Zungu Restaurant</title>
+    <link rel="icon" href="images/download.jpeg" type="image/jpeg">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h1>Zungu</h1>
+                <span class="logo-tagline">Authentic South African Cuisine</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="menu.html" class="nav-link">Menu</a></li>
+                <li><a href="reservations.html" class="nav-link">Reservations</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="contact.html" class="nav-link active">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Contact Section -->
+    <section class="section contact-section" style="padding-top: 120px;">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Contact Us</h2>
+                <p class="section-subtitle">We'd love to hear from you. Get in touch with us today!</p>
+            </div>
+
+            <div class="contact-content">
+                <!-- Contact Information -->
+                <div class="contact-info-grid">
+                    <div class="contact-card">
+                        <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+                        <h3>Visit Us</h3>
+                        <p>123 Florida Road<br>Morningside, Durban 4001<br>KwaZulu-Natal, South Africa</p>
+                        <a href="#directions" class="btn btn-secondary">Get Directions</a>
+                    </div>
+                    
+                    <div class="contact-card">
+                        <div class="contact-icon"><i class="fas fa-phone"></i></div>
+                        <h3>Call Us</h3>
+                        <p><strong>Restaurant:</strong> +27 31 312 4567<br>
+                        <strong>Reservations:</strong> +27 31 312 4568<br>
+                        <strong>WhatsApp:</strong> +27 82 555 1234</p>
+                        <a href="tel:+27313124567" class="btn btn-secondary">Call Now</a>
+                    </div>
+                    
+                    <div class="contact-card">
+                        <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+                        <h3>Email Us</h3>
+                        <p><strong>General:</strong> info@zungurestaurant.co.za<br>
+                        <strong>Reservations:</strong> reservations@zungurestaurant.co.za<br>
+                        <strong>Events:</strong> events@zungurestaurant.co.za</p>
+                        <a href="mailto:info@zungurestaurant.co.za" class="btn btn-secondary">Send Email</a>
+                    </div>
+                    
+                    <div class="contact-card">
+                        <div class="contact-icon"><i class="fas fa-clock"></i></div>
+                        <h3>Opening Hours</h3>
+                        <div class="hours-list">
+                            <div class="hours-item">
+                                <span>Monday - Thursday</span>
+                                <span>11:00 AM - 10:00 PM</span>
+                            </div>
+                            <div class="hours-item">
+                                <span>Friday - Saturday</span>
+                                <span>11:00 AM - 11:00 PM</span>
+                            </div>
+                            <div class="hours-item">
+                                <span>Sunday</span>
+                                <span>11:00 AM - 9:00 PM</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form and Map -->
+                <div class="contact-form-section">
+                    <div class="contact-form-container">
+                        <h3>Send Us a Message</h3>
+                        <form class="contact-form" id="contactForm">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="firstName">First Name *</label>
+                                    <input type="text" id="firstName" name="firstName" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="lastName">Last Name *</label>
+                                    <input type="text" id="lastName" name="lastName" required>
+                                </div>
+                            </div>
+                            
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="email">Email Address *</label>
+                                    <input type="email" id="email" name="email" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="phone">Phone Number</label>
+                                    <input type="tel" id="phone" name="phone" placeholder="+27 XX XXX XXXX">
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="subject">Subject *</label>
+                                <select id="subject" name="subject" required>
+                                    <option value="">Select Subject</option>
+                                    <option value="general">General Inquiry</option>
+                                    <option value="reservation">Reservation Question</option>
+                                    <option value="event">Private Event Booking</option>
+                                    <option value="catering">Catering Services</option>
+                                    <option value="feedback">Feedback & Suggestions</option>
+                                    <option value="employment">Employment Opportunities</option>
+                                    <option value="media">Media & Press Inquiries</option>
+                                    <option value="partnership">Partnership Opportunities</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="message">Message *</label>
+                                <textarea id="message" name="message" rows="6" placeholder="Please share your message, questions, or feedback with us..." required></textarea>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" id="newsletter" name="newsletter">
+                                    <span class="checkmark"></span>
+                                    Subscribe to our newsletter for special offers and events
+                                </label>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary btn-full">Send Message</button>
+                        </form>
+                    </div>
+
+                    <div class="map-container" id="directions">
+                        <h3>Find Us</h3>
+                        <div class="map-placeholder">
+                            <div style="background: linear-gradient(135deg, #d4af37, #f4e4a6); height: 300px; border-radius: 10px; display: flex; align-items: center; justify-content: center; color: #2c1810;">
+                                <div style="text-align: center;">
+                                    <i class="fas fa-map-marked-alt" style="font-size: 4rem; margin-bottom: 1rem;"></i>
+                                    <h4>Interactive Map</h4>
+                                    <p>123 Florida Road, Morningside<br>Durban 4001, South Africa</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div style="margin-top: 1rem;">
+                            <a href="https://maps.google.com/?q=Florida+Road+Morningside+Durban" target="_blank" class="btn btn-secondary" style="width: 100%; text-align: center;">Open in Google Maps</a>
+                        </div>
+                        
+                        <div style="margin-top: 2rem; padding: 1.5rem; background: #f8f8f8; border-radius: 10px;">
+                            <h4 style="color: #2c1810; margin-bottom: 1rem;">Directions & Parking</h4>
+                            <ul style="color: #666; line-height: 1.8;">
+                                <li><strong>From Durban CBD:</strong> Take M13 towards Morningside, turn right onto Florida Road</li>
+                                <li><strong>From Umhlanga:</strong> Take M4 south, exit at Riverside Road, follow to Florida Road</li>
+                                <li><strong>From Pietermaritzburg:</strong> Take N3 to Durban, exit at Westville, follow M13 to Florida Road</li>
+                                <li><strong>Parking:</strong> Free street parking available, secure parking garage 50m away</li>
+                                <li><strong>Public Transport:</strong> Bus stop directly outside, taxi rank 100m away</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Additional Services -->
+                <div style="background: #f8f8f8; padding: 3rem; border-radius: 15px; margin: 4rem 0;">
+                    <h3 style="color: #d4af37; text-align: center; margin-bottom: 3rem;">Additional Services</h3>
+                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem;">
+                        <div class="service-card">
+                            <div class="service-icon"><i class="fas fa-utensils"></i></div>
+                            <h4>Catering Services</h4>
+                            <p>Bring authentic South African flavors to your event. We offer full catering services for weddings, corporate events, and private parties.</p>
+                            <ul style="color: #666; margin: 1rem 0;">
+                                <li>Traditional braai setups</li>
+                                <li>Buffet and plated meal options</li>
+                                <li>Custom menu planning</li>
+                                <li>Professional service staff</li>
+                            </ul>
+                            <a href="mailto:events@zungurestaurant.co.za" class="btn btn-secondary">Inquire About Catering</a>
+                        </div>
+                        
+                        <div class="service-card">
+                            <div class="service-icon"><i class="fas fa-calendar-alt"></i></div>
+                            <h4>Private Events</h4>
+                            <p>Host your special occasion in our private dining room or book the entire restaurant for exclusive events.</p>
+                            <ul style="color: #666; margin: 1rem 0;">
+                                <li>Private dining room (up to 25 guests)</li>
+                                <li>Full restaurant buyouts (up to 80 guests)</li>
+                                <li>Custom entertainment packages</li>
+                                <li>Personalized menu options</li>
+                            </ul>
+                            <a href="mailto:events@zungurestaurant.co.za" class="btn btn-secondary">Plan Your Event</a>
+                        </div>
+                        
+                        <div class="service-card">
+                            <div class="service-icon"><i class="fas fa-graduation-cap"></i></div>
+                            <h4>Cooking Classes</h4>
+                            <p>Learn to cook traditional South African dishes with our experienced chefs in hands-on cooking classes.</p>
+                            <ul style="color: #666; margin: 1rem 0;">
+                                <li>Traditional cooking techniques</li>
+                                <li>Spice blending workshops</li>
+                                <li>Group and individual classes</li>
+                                <li>Take-home recipe collections</li>
+                            </ul>
+                            <a href="mailto:info@zungurestaurant.co.za" class="btn btn-secondary">Book a Class</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FAQ Section -->
+                <div class="faq-section">
+                    <h3>Frequently Asked Questions</h3>
+                    <div class="faq-grid">
+                        <div class="faq-item">
+                            <h4><i class="fas fa-question-circle"></i> Do you accommodate dietary restrictions?</h4>
+                            <p>Yes! We cater to various dietary needs including vegetarian, vegan, gluten-free, and halal options. Please inform us of any allergies or restrictions when making your reservation.</p>
+                        </div>
+                        <div class="faq-item">
+                            <h4><i class="fas fa-question-circle"></i> Is there parking available?</h4>
+                            <p>Free street parking is available around the restaurant. We also have a secure parking garage 50 meters away for your convenience.</p>
+                        </div>
+                        <div class="faq-item">
+                            <h4><i class="fas fa-question-circle"></i> Do you offer takeaway and delivery?</h4>
+                            <p>Yes, we offer takeaway services. Delivery is available through Uber Eats and Mr D Food within a 10km radius of our restaurant.</p>
+                        </div>
+                        <div class="faq-item">
+                            <h4><i class="fas fa-question-circle"></i> Can I bring my own wine?</h4>
+                            <p>We have an extensive selection of South African wines, but we do allow BYO wine with a corkage fee of R50 per bottle.</p>
+                        </div>
+                        <div class="faq-item">
+                            <h4><i class="fas fa-question-circle"></i> Do you host cultural entertainment?</h4>
+                            <p>Yes! We feature traditional Zulu music and dance performances on Friday and Saturday evenings. Check our events calendar for specific dates.</p>
+                        </div>
+                        <div class="faq-item">
+                            <h4><i class="fas fa-question-circle"></i> Are children welcome?</h4>
+                            <p>Absolutely! We're a family-friendly restaurant with high chairs available and a special children's menu featuring mild, kid-friendly versions of traditional dishes.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Emergency Contact -->
+                <div style="background: linear-gradient(135deg, #2c1810, #3d2517); color: #fff; padding: 2rem; border-radius: 15px; margin: 3rem 0; text-align: center;">
+                    <h3 style="color: #d4af37; margin-bottom: 1rem;">Emergency Contact</h3>
+                    <p style="margin-bottom: 1rem;">For urgent matters outside business hours:</p>
+                    <p style="font-size: 1.2rem; font-weight: 600;">Manager on Duty: +27 82 999 8888</p>
+                    <p style="color: #f4e4a6; font-size: 0.9rem;">Available 24/7 for emergencies and last-minute large group bookings</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <h3>Zungu</h3>
+                        <p>Authentic South African Cuisine</p>
+                    </div>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p><i class="fas fa-map-marker-alt"></i> 123 Florida Road<br>Morningside, Durban 4001</p>
+                    <p><i class="fas fa-phone"></i> +27 31 312 4567</p>
+                    <p><i class="fas fa-envelope"></i> info@zungurestaurant.co.za</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Hours</h4>
+                    <p>Monday - Thursday: 11:00 AM - 10:00 PM</p>
+                    <p>Friday - Saturday: 11:00 AM - 11:00 PM</p>
+                    <p>Sunday: 11:00 AM - 9:00 PM</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Newsletter</h4>
+                    <p>Subscribe for exclusive offers and updates</p>
+                    <div class="newsletter-form">
+                        <input type="email" placeholder="Enter your email" class="newsletter-input">
+                        <button type="submit" class="newsletter-btn">Subscribe</button>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 Zungu Restaurant. All rights reserved. | Privacy Policy | Terms of Service</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
